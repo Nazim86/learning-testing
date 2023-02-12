@@ -12,7 +12,7 @@ app.get('/news/categories', (req: Request, res: Response) => {
 })
 
 app.delete('/news/categories/:id', (req: Request, res: Response) => {
-    newsCategories = newsCategories.filter(c => c.id !== +req.params.id)
+    newsCategories = newsCategories.filter(c => c.id !== +req.params.id);
     res.send(204)
 })
 
